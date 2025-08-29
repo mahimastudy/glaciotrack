@@ -1,0 +1,50 @@
+name: glaciotrack
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Core
+  - python=3.10
+  - pip
+  - jupyterlab
+  - notebook
+  - geopy
+
+
+  # Scientific stack
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+
+  # Geospatial / remote sensing
+  - xarray
+  - rasterio
+  - rioxarray
+  - geopandas
+  - shapely
+  - pyproj
+  - cartopy
+
+  # NetCDF / HDF5
+  - netcdf4
+  - h5py
+
+  # Cloud / NASA data access
+  - boto3          # AWS S3 (ITS_LIVE, NSIDC)
+  - requests
+
+  # Testing & linting
+  - pytest
+  - black
+  - flake8
+
+  # Optional viz
+  - hvplot
+  - holoviews
+
+  # Pip-only deps
+  - pip:
+      - itslive-py   # Python client for ITS_LIVE velocity data
+

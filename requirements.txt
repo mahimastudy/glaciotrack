@@ -1,7 +1,5 @@
-matplotlib
-pandas
 numpy
+pandas
+matplotlib
 scipy
-plotly
-xarray
-netCDF4
+statsmodels
